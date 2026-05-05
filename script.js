@@ -136,6 +136,15 @@ form.addEventListener('submit', (e) => {
 function generateQR() {
   const container = document.getElementById('qrcode');
   if (!container) return;
+  const applyQRImageA11y = () => {
+    const qrImg = container.querySelector('img');
+    if (!qrImg) return;
+    qrImg.alt = 'WhatsApp QR code for GoTech Solutions';
+    qrImg.width = 160;
+    qrImg.height = 160;
+    qrImg.loading = 'lazy';
+    qrImg.decoding = 'async';
+  };
 
   // Use qrcodejs if loaded, otherwise draw with canvas API fallback
   if (typeof QRCode !== 'undefined') {
@@ -147,6 +156,10 @@ function generateQR() {
       colorLight: '#ffffff',
       correctLevel: QRCode.CorrectLevel.M
     });
+
+    // Improve accessibility and reduce CLS for generated QR image.
+    applyQRImageA11y();
+    setTimeout(applyQRImageA11y, 0);
   } else {
     // Fallback: show a styled link if library didn't load
     container.innerHTML = `

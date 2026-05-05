@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: www.gotechsolutions.co.ke
+Sitemap: https://www.gotechsolutions.co.ke/sitemap.xml
