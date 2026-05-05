@@ -22,7 +22,7 @@ https://<your-github-username>.github.io/<your-repo-name>/
 ├── index.html                        # Main website (all sections)
 ├── styles.css                        # All styling and responsive layout
 ├── script.js                         # Interactions, QR code, form validation
-├── gotech_solutions_logo_v2__1_.svg  # Official GoTech Solutions logo
+├── GoTech-Solutions-Logo.png          # Official GoTech Solutions logo
 └── README.md                         # This file
 ```
 
@@ -42,7 +42,7 @@ https://<your-github-username>.github.io/<your-repo-name>/
    - `index.html`
    - `styles.css`
    - `script.js`
-   - `gotech_solutions_logo_v2__1_.svg`
+   - `./assets/gotech-solutions-logo.png`
    - `README.md`
 3. Scroll down and click **Commit changes**
 
